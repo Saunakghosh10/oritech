@@ -16,9 +16,9 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="flex-1 p-8 overflow-auto bg-gray-50">
+    <div className="w-full h-full space-y-6">
       {/* Header */}
-      <div className="flex justify-between items-center mb-8">
+      <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold text-gray-800">Service Dashboard</h1>
         <Link
           to="/new-service"
@@ -29,7 +29,7 @@ const Dashboard = () => {
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, index) => (
           <Link
             key={index}
@@ -46,7 +46,7 @@ const Dashboard = () => {
       <div className="bg-white rounded-lg shadow-sm p-6">
         <h2 className="text-xl font-bold text-gray-800 mb-6">Recent Customers</h2>
         <div className="overflow-x-auto">
-          <table className="min-w-full">
+          <table className="w-full">
             <thead>
               <tr className="border-b">
                 <th className="text-left py-3 px-4 text-sm font-medium text-gray-600">CUSTOMER NAME</th>

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import DashboardLayout from './components/layout/DashboardLayout'
 import Header from './components/Header'
 import StatsCard from './components/StatsCard'
 import CustomersTable from './components/CustomersTable'
@@ -28,20 +27,18 @@ function App() {
   ])
 
   return (
-    <DashboardLayout>
-      <div className="space-y-6">
-        <Header />
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <StatsCard title="Total Customers" value={stats.totalCustomers} />
-          <StatsCard title="Active Services" value={stats.activeServices} />
-          <StatsCard title="Pending Calls" value={stats.pendingCalls} />
-          <StatsCard title="Completed Calls" value={stats.completedCalls} />
-        </div>
-
-        <CustomersTable customers={customers} />
+    <div className="space-y-6">
+      <Header />
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <StatsCard title="Total Customers" value={stats.totalCustomers} />
+        <StatsCard title="Active Services" value={stats.activeServices} />
+        <StatsCard title="Pending Calls" value={stats.pendingCalls} />
+        <StatsCard title="Completed Calls" value={stats.completedCalls} />
       </div>
-    </DashboardLayout>
+
+      <CustomersTable customers={customers} />
+    </div>
   )
 }
 
