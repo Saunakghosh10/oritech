@@ -26,7 +26,7 @@ const DashboardLayout = ({ children }) => {
         <div className="h-full flex flex-col">
           <div className="p-4 border-b">
             <img 
-              src="src\assets\image\oritech.png" 
+              src="src/assets/image/oritech.png" 
               alt="Oritech Logo" 
               className="h-8 w-auto"
             />
