@@ -6,7 +6,7 @@ import {
   BellIcon, 
   UserCircleIcon 
 } from '@heroicons/react/24/outline';
-import oritechLogo from '../../assets/image/oritech.png';
+import oritechLogo from '/src/assets/image/oritech.png'
 
 const DashboardLayout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -26,7 +26,7 @@ const DashboardLayout = ({ children }) => {
         <div className="h-full flex flex-col">
           <div className="p-4 border-b">
             <img 
-              src="src/assets/image/oritech.png" 
+              src={oritechLogo} 
               alt="Oritech Logo" 
               className="h-8 w-auto"
             />
